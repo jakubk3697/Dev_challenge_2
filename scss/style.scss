@@ -1,3 +1,5 @@
+$mainContentColor: rgb(44, 44, 46);
+
 * {
     margin: 0;
     padding: 0;
@@ -8,3 +10,35 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+header, section {
+    height: 100vh;
+}
+
+#mainNav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    width: 100%;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        list-style-type: none;
+
+        a {
+            color: $mainContentColor;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+}
+
+// header {
+//     background-color: rgb(246, 143, 143);
+// }
+
+// #about {
+//     background: rgb(248, 248, 151);
+// }

@@ -8,4 +8,37 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+header, section {
+  height: 100vh;
+}
+
+#mainNav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 40px;
+  width: 100%;
+}
+
+#mainNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  list-style-type: none;
+}
+
+#mainNav ul a {
+  color: #2c2c2e;
+  text-decoration: none;
+  font-weight: 700;
+}
 /*# sourceMappingURL=style.css.map */

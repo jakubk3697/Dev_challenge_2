@@ -37,6 +37,7 @@ header, section {
 }
 
 #mainNav ul a {
+  position: relative;
   color: #2c2c2e;
   text-decoration: none;
   font-weight: 700;

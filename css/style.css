@@ -206,16 +206,58 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .services__cardBox {
-  width: 50%;
-}
-
-.services__cardBox .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 1px 2px 5px 0px #42445a;
+          box-shadow: 1px 2px 5px 0px #42445a;
+}
+
+.services__cardText {
+  width: 80%;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.services__divideLine {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: black;
+}
+
+.services__cardIcon {
+  font-size: 3.2rem;
+  width: 20%;
+  padding: 0 1rem;
 }
 
 .services__contentBox {

@@ -300,6 +300,7 @@ header {
 
 .gallery {
   background-color: #fee92e;
+  padding: 6rem 2rem;
 }
 
 .gallery__title {

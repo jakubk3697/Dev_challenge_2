@@ -392,10 +392,80 @@ header {
   display: block;
   margin: 0 auto;
   margin-top: 5rem;
-  background-color: #5685A3;
+  background-color: #5685a3;
 }
 
 .gallery__btn:hover {
   opacity: 1;
+}
+
+.subscribe {
+  background-color: white;
+}
+
+.subscribe__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 100%;
+}
+
+.subscribe__contentBox {
+  width: 50%;
+}
+
+.subscribe__title {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.subscribe__text {
+  font-size: 1.4rem;
+  width: 60%;
+  padding: 1rem 0;
+}
+
+.subscribe__inp {
+  margin-right: 20px;
+  padding: 1rem;
+  width: 60%;
+  font-size: 1.5rem;
+}
+
+.subscribe__btn {
+  padding: 1.3rem 1.8rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  letter-spacing: 2px;
+  -webkit-box-shadow: 1px 2px 5px 0px #42445a;
+          box-shadow: 1px 2px 5px 0px #42445a;
+  opacity: .85;
+  -webkit-transition: .3s opacity;
+  transition: .3s opacity;
+  cursor: pointer;
+  background-color: #97ba2c;
+}
+
+.subscribe__btn:hover {
+  opacity: 1;
+}
+
+.subscribe__imgBox {
+  width: 45%;
+}
+
+.subscribe__imgBox img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */

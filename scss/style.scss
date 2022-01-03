@@ -9,7 +9,9 @@ $blogBgcColor: rgb(176, 124, 248);
 $footerBgcColor: rgb(38, 38, 38);
 $headerContent: rgb(254, 96, 51);
 
-$galleryBtnColor: #5685A3;
+$galleryBtnColor: rgb(86, 133, 163);
+$subscribeBtnColor:rgb(151, 186, 44);
+
 
 $basicBoxShadow: 1px 2px 5px 0px rgba(66, 68, 90, 1);
 
@@ -173,6 +175,7 @@ header {
 
 .about__mainPhoto {
 	width: 55%;
+    
 	img {
 		display: block;
 		width: 85%;
@@ -356,3 +359,54 @@ header {
     margin-top: 5rem;
     background-color: $galleryBtnColor;
 }
+
+// SUBSCRIBE
+
+.subscribe {
+    background-color: $subscribeUsBgcColor;
+}
+
+.subscribe__box {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 100%;
+}
+
+.subscribe__contentBox {
+    width: 50%;
+}
+
+.subscribe__title {
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.subscribe__text {
+    font-size: 1.4rem;
+    width: 60%;
+    padding: 1rem 0;
+}
+
+.subscribe__inp {
+    margin-right: 20px;
+    padding: 1rem;
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+.subscribe__btn {
+    @include basicBtn;
+    background-color: $subscribeBtnColor;
+}
+
+.subscribe__imgBox {
+    width: 45%;
+    
+	img {
+		display: block;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+

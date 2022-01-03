@@ -181,7 +181,7 @@ header {
       -ms-flex-positive: 2;
           flex-grow: 2;
   width: 35%;
-  color: white;
+  color: #ebebeb;
 }
 
 .about__content h2 {
@@ -467,5 +467,126 @@ header {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.blog {
+  background-color: #b07cf8;
+  padding: 5rem 0;
+}
+
+.blog__title {
+  font-size: 6rem;
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+}
+
+.blog__text {
+  font-size: 1.4rem;
+  width: 50%;
+  margin: 2rem auto;
+  text-align: center;
+  color: #ebebeb;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.blog__cardsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.blog__card {
+  position: relative;
+  width: 33%;
+  min-height: 250px;
+  padding: 2rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.blog__cardDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(70, 73, 78, 0.705);
+  width: 50px;
+  height: 50px;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.blog__cardTitle {
+  position: absolute;
+  left: 15px;
+  bottom: 15%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.blog__cardInfo {
+  position: absolute;
+  bottom: 5%;
+  left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+  color: #ebebeb;
+}
+
+.card--1 {
+  background-image: url("/assets/images/galleryPhotos/berries.jpg");
+}
+
+.card--2 {
+  background-image: url("/assets/images/galleryPhotos/peaches.jpg");
+}
+
+.card--3 {
+  background-image: url("/assets/images/galleryPhotos/pepper.jpg");
+}
+
+.blog__btn {
+  display: block;
+  padding: 1.3rem 1.8rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  letter-spacing: 2px;
+  -webkit-box-shadow: 1px 2px 5px 0px #42445a;
+          box-shadow: 1px 2px 5px 0px #42445a;
+  opacity: .85;
+  -webkit-transition: .3s opacity;
+  transition: .3s opacity;
+  cursor: pointer;
+  margin: 5rem auto 0 auto;
+  background-color: #f82b3c;
+}
+
+.blog__btn:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

@@ -55,7 +55,7 @@ $basicBoxShadow: 1px 2px 5px 0px rgba(66, 68, 90, 1);
 
 html {
     font-size: 10px;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 body {
@@ -70,9 +70,14 @@ header {
 // NAVIGATION
 .mainNav {
     position: fixed;
-	// top: -100px;
+	top: -100px;
     width: 100%;
     z-index: 2;
+    transition: transform .3s;
+}
+
+.mainNav.scrollingTop {
+    transform: translateY(100px);
 }
 
 .mainNav__box {
@@ -85,7 +90,6 @@ header {
         letter-spacing: 3px;
         font-weight: bold;
         width: 10%;
-        // margin-right: auto;
         font-size: 5rem;
     }
     

@@ -26,8 +26,18 @@ header {
 
 .mainNav {
   position: fixed;
+  top: -100px;
   width: 100%;
   z-index: 2;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.mainNav.scrollingTop {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
 }
 
 .mainNav__box {

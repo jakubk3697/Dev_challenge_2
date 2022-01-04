@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8rem;
+    background-color: $footerBgcColor;
+    color: $lightContentColor;
+}
+
+.footer__info, .footer__creator {
+    font-size: 1.1rem;
+}
+
+.footer__logo {
+    font-family: $logoFont;
+    font-size: 2.5rem;
+}
+
+.footer__creator {
+    span {
+        color: red;
+    }
+}

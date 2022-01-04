@@ -1,0 +1,39 @@
+
+.about {
+    background: $aboutUsBgcColor;
+}
+
+.about__box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-height: 100%;
+}
+
+.about__mainPhoto {
+	width: 55%;
+    
+	img {
+		display: block;
+		width: 85%;
+		object-fit: contain;
+	}
+}
+
+.about__content {
+	flex-grow: 2;
+	width: 35%;
+	color: $lightContentColor;
+
+    h2 {
+        font-weight: 700;
+        font-size: 8rem;
+        margin-bottom: 2rem;
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-size: 1.8rem;
+		line-height: 1.6;
+    }
+}

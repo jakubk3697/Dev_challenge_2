@@ -1,0 +1,23 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+}
+
+@mixin basicBtn {
+    padding: 1.3rem 1.8rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    letter-spacing: 2px;
+    box-shadow: $basicBoxShadow;
+    opacity: .85;
+    transition: .3s opacity;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+    
+}

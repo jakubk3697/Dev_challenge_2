@@ -1,0 +1,48 @@
+
+.subscribe {
+    background-color: $subscribeUsBgcColor;
+}
+
+.subscribe__box {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	max-height: 100%;
+}
+
+.subscribe__contentBox {
+    width: 50%;
+}
+
+.subscribe__title {
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.subscribe__text {
+    font-size: 1.4rem;
+    width: 60%;
+    padding: 1rem 0;
+}
+
+.subscribe__inp {
+    margin-right: 20px;
+    padding: 1rem;
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+.subscribe__btn {
+    @include basicBtn;
+    background-color: $subscribeBtnColor;
+}
+
+.subscribe__imgBox {
+    width: 45%;
+    
+	img {
+		display: block;
+		width: 100%;
+		object-fit: cover;
+	}
+}

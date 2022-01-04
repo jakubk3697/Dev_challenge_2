@@ -1,0 +1,43 @@
+
+header {
+    background-color: $headerBgcColor;
+    height: 100vh;
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header__content {
+    width: 35%;
+
+    h1 {
+        font-weight: 700;
+        font-size: 6rem;
+        margin-bottom: 2rem;
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+		line-height: 1.8;
+    }
+}
+
+.header__startBtn {
+    @include basicBtn();
+    background-color: $headerContent;
+}
+
+.header__mainPhoto {
+	display: flex;
+	justify-content: center;
+
+	img {
+		width: 80%;
+	}
+}

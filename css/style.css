@@ -13,6 +13,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -592,10 +593,9 @@ header {
 
 .contact {
   background-image: url("/assets/images/backgrounds/contact_blured20.jpg");
-  height: 100vh;
   background-size: cover;
   background-position: center;
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 
 .contact__title {
@@ -606,10 +606,10 @@ header {
 
 .contact__text {
   font-size: 1.4rem;
-  width: 35%;
+  width: 30%;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 4rem;
+  padding-bottom: 10rem;
 }
 
 .contact__box {

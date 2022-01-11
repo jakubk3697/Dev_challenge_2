@@ -1,59 +1,64 @@
-.mainNav {
-    position: fixed;
-	top: -100px;
-    width: 100%;
-    z-index: 2;
-    transition: transform .3s;
-}
 
-.mainNav.scrollingTop {
-    transform: translateY(100px);
-}
 
-.mainNav__box {
-    display: flex;
-    align-items: center;
-    width: 100%;
-
-    .logo {
-        font-family: $logoFont;
-        letter-spacing: 3px;
-        font-weight: bold;
-        width: 10%;
-        font-size: 5rem;
+    .mainNav {
+        position: fixed;
+        // top: -100px;
+        width: 100%;
+        z-index: 2;
+        transition: transform .3s;
     }
     
-    ul {
-        display: flex;
-        list-style-type: none;
-        text-transform: uppercase;
-		margin-left: auto;
-		
-		li {
-			margin-left: 2.5rem;
-		}
-
-        a {
-            position: relative;
-            color: $mainContentColor;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.8rem;
+    .mainNav.scrollingTop {
+        transform: translateY(100px);
+    }
     
-            &::before {
-                content: '';
-                display: block;
-                width: 100%;
-                height: 3px;
-                background-color: $headerContent;
-                
-                visibility: hidden;
+    .mainNav__box {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    
+        .logo {
+            font-family: $logoFont;
+            letter-spacing: 3px;
+            font-weight: bold;
+            width: 10%;
+            font-size: 5rem;
+        }
+        
+        ul {
+            display: flex;
+            list-style-type: none;
+            text-transform: uppercase;
+            margin-left: auto;
+            
+            li {
+                margin-left: 2.5rem;
             }
     
-            &:hover::before {
-                visibility: visible;
+            a {
+                position: relative;
+                color: $mainContentColor;
+                text-decoration: none;
+                font-weight: 700;
+                font-size: 1.8rem;
+        
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 3px;
+                    background-color: $headerContent;
+                    
+                    visibility: hidden;
+                }
+        
+                &:hover::before {
+                    visibility: visible;
+                }
             }
         }
-    }
     
-}
+        .mainNav__bar {
+            display: none;
+        }
+    }

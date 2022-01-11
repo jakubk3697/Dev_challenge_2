@@ -22,7 +22,6 @@ body {
 
 .mainNav {
   position: fixed;
-  top: -100px;
   width: 100%;
   z-index: 2;
   -webkit-transition: -webkit-transform .3s;
@@ -86,6 +85,10 @@ body {
 
 .mainNav__box ul a:hover::before {
   visibility: visible;
+}
+
+.mainNav__box .mainNav__bar {
+  display: none;
 }
 
 header {

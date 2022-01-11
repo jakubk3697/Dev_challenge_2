@@ -20,8 +20,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.mainNav__box {
+.mainNav {
   position: fixed;
+  font-size: 1.6rem;
+  height: 80px;
+  width: 100%;
+}
+
+.mainNav__box {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,21 +38,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.6rem;
-  height: 80px;
-  width: 100%;
-  z-index: 1;
 }
 
 .logo {
   font-family: "Dancing Script", cursive;
   letter-spacing: 3px;
   font-weight: bold;
-  width: 10%;
   font-size: 5rem;
   text-decoration: none;
   color: #000;
-  width: 100%;
+  width: 30%;
+  margin-right: auto;
 }
 
 .mainNav__links {
@@ -56,22 +59,28 @@ body {
           flex-direction: column;
   text-align: center;
   position: absolute;
-  left: 5%;
-  right: 5%;
+  left: 0;
+  right: 0%;
   top: 80px;
-  height: 0px;
+  padding: 2rem 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.404);
   -webkit-transition: height .3s;
   transition: height .3s;
 }
 
 .mainNav__links a {
-  color: #000;
+  color: #ebebeb;
   text-decoration: none;
   line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 5px 10px;
 }
 
 .mainNav__links a:hover {
-  background-color: #ddd;
+  border-bottom: 2px solid #fe6033;
 }
 
 .mainNav__links.linksOpened {
@@ -84,6 +93,47 @@ body {
   padding: 10px;
   cursor: pointer;
   font-size: 2.5rem;
+}
+
+@media screen and (min-width: 730px) {
+  .mainNav__links {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    background-color: transparent;
+    width: 80%;
+    list-style: none;
+  }
+  .mainNav__links a {
+    display: block;
+    color: #2c2c2e;
+    padding-left: 2rem;
+  }
+  .mainNav__links a::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fe6033;
+    visibility: hidden;
+  }
+  .mainNav__links a:hover {
+    border-bottom: none;
+  }
+  .mainNav__links a:hover::before {
+    visibility: visible;
+  }
+  .mainNav__bar {
+    display: none;
+  }
 }
 
 header {
